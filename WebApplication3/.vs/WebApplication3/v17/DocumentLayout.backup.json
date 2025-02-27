@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\controllers\\markscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:controllers\\markscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\migrations\\20250220060356_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:migrations\\20250220060356_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\model\\marks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:model\\marks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication3\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C421C283-CDBD-4F63-A863-E7397B040EF0}|WebApplication3.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MarksController.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Controllers\\MarksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MarksController.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Controllers\\MarksController.cs",
+              "RelativeToolTip": "Controllers\\MarksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T06:05:03.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250220060356_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Migrations\\20250220060356_Initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250220060356_Initial.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Migrations\\20250220060356_Initial.cs",
+              "RelativeToolTip": "Migrations\\20250220060356_Initial.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T06:03:56.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Marks.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Model\\Marks.cs",
+              "RelativeDocumentMoniker": "Model\\Marks.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Model\\Marks.cs",
+              "RelativeToolTip": "Model\\Marks.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T05:03:30.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:28:31.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "Model\\Student.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Model\\Student.cs",
+              "RelativeToolTip": "Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T03:54:08.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:34:45.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-19T10:32:17.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T04:55:17.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication3\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:24:14.627Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+C:\Users\priya\OneDrive\Documents\web_api_cg\WebApplication10\obj\Release\net8.0\PubTmp\Out\WebApplication10.exe
+C:\Users\priya\OneDrive\Documents\web_api_cg\WebApplication10\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\priya\OneDrive\Documents\web_api_cg\WebApplication10\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\priya\OneDrive\Documents\web_api_cg\WebApplication10\obj\Release\net8.0\PubTmp\Out\WebApplication10.dll
+C:\Users\priya\OneDrive\Documents\web_api_cg\WebApplication10\obj\Release\net8.0\PubTmp\Out\WebApplication10.deps.json
+C:\Users\priya\OneDrive\Documents\web_api_cg\WebApplication10\obj\Release\net8.0\PubTmp\Out\WebApplication10.runtimeconfig.json
+C:\Users\priya\OneDrive\Documents\web_api_cg\WebApplication10\obj\Release\net8.0\PubTmp\Out\WebApplication10.pdb

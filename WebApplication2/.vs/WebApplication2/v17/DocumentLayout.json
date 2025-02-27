@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication2\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication2\\webapplication2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|solutionrelative:webapplication2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication2\\model\\studentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|solutionrelative:model\\studentaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication2\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|solutionrelative:model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|c:\\users\\priya\\onedrive\\documents\\web_api_cg\\webapplication2\\model\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65DF5B01-6FCB-4BCA-B52B-3E4DE272BD81}|WebApplication2.csproj|solutionrelative:model\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentAccount.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Model\\StudentAccount.cs",
+              "RelativeDocumentMoniker": "Model\\StudentAccount.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Model\\StudentAccount.cs",
+              "RelativeToolTip": "Model\\StudentAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T06:01:26.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Model\\Account.cs",
+              "RelativeDocumentMoniker": "Model\\Account.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Model\\Account.cs",
+              "RelativeToolTip": "Model\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T06:00:23.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "Model\\Student.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Model\\Student.cs",
+              "RelativeToolTip": "Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T05:14:33.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebApplication2",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\WebApplication2.csproj",
+              "RelativeDocumentMoniker": "WebApplication2.csproj",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\WebApplication2.csproj",
+              "RelativeToolTip": "WebApplication2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-19T05:14:07.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\priya\\OneDrive\\Documents\\web_api_cg\\WebApplication2\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T05:13:36.252Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
