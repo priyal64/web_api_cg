@@ -1,0 +1,285 @@
+﻿@model List<SubManagement.Models.Subject>
+@{
+    ViewData["Title"] = "Subject Management";
+    var saved = ViewBag.SavedSubjects as List<SubManagement.Models.Subject>;
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    <form asp-action="Index" method="post">
+        @Html.AntiForgeryToken()
+
+        <div id="subjectsContainer">
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between">
+                        <h5>Subject @(i + 1)</h5>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="removeSubject(this)">Remove</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Subject Name</label>
+                            <input name="[@i].SubjectName" class="form-control" required />
+                        </div>
+
+                        <div id="topics-@i">
+                            @for (int j = 0; j < Model[i].Topics.Count; j++)
+                            {
+                                <div class="card mt-3">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <h6>Topic @(j + 1)</h6>
+                                        <button type="button" class="btn btn-sm btn-danger" onclick="removeTopic(this)">Remove</button>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Topic Name</label>
+                                            <input name="[@i].Topics[@j].TopicName" class="form-control" required />
+                                        </div>
+
+                                        <table class="table mt-3">
+                                            <thead>
+                                                <tr>
+                                                    <th>Subtopic</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="subtopics-@i-@j">
+                                                @for (int k = 0; k < Model[i].Topics[j].Subtopics.Count; k++)
+                                                {
+                                                    <tr>
+                                                        <td>
+                                                            <input name="[@i].Topics[@j].Subtopics[@k].SubtopicName" class="form-control" required />
+                                                        </td>
+                                                        <td>
+                                                            <button type="button" class="btn btn-sm btn-danger" onclick="removeSubtopic(this)">Remove</button>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                        <button type="button" class="btn btn-sm btn-success" onclick="addSubtopic(@i, @j)">Add Subtopic</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <button type="button" class="btn btn-sm btn-primary mt-2" onclick="addTopic(@i)">Add Topic</button>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="mt-3">
+            <button type="button" class="btn btn-info" onclick="addSubject()">Add Subject</button>
+            <button type="submit" class="btn btn-success float-right">Save All</button>
+        </div>
+    </form>
+
+    <hr class="my-5" />
+
+    <h3>Saved Data</h3>
+    @if (saved?.Count > 0)
+    {
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Topics & Subtopics</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var subject in saved)
+                    {
+                        <tr>
+                            <td>@subject.SubjectName</td>
+                            <td>
+                                <ul>
+                                    @foreach (var topic in subject.Topics)
+                                    {
+                                        <li>
+                                            @topic.TopicName
+                                            <ul>
+                                                @foreach (var subtopic in topic.Subtopics)
+                                                {
+                                                    <li>@subtopic.SubtopicName</li>
+                                                }
+                                            </ul>
+                                        </li>
+                                    }
+                                </ul>
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@subject.Id" class="btn btn-sm btn-warning">Edit</a>
+                                <form asp-action="Delete" method="post" style="display:inline">
+                                    <input type="hidden" name="id" value="@subject.Id" />
+                                    <button type="submit" class="btn btn-sm btn-danger"
+                                            onclick="return confirm('Delete this subject?')">
+                                        Delete
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p class="text-muted">No data saved yet.</p>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        let subjectIndex = @Model.Count;
+        let topicIndices = [];
+
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            @:topicIndices[@i] = @Model[i].Topics.Count;
+        }
+
+        function addSubject() {
+            const container = document.getElementById("subjectsContainer");
+            const html = `
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between">
+                        <h5>Subject ${subjectIndex + 1}</h5>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="removeSubject(this)">Remove</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Subject Name</label>
+                            <input name="[${subjectIndex}].SubjectName" class="form-control" required />
+                        </div>
+                        <div id="topics-${subjectIndex}">
+                            <div class="card mt-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <h6>Topic 1</h6>
+                                    <button type="button" class="btn btn-sm btn-danger" onclick="removeTopic(this)">Remove</button>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Topic Name</label>
+                                        <input name="[${subjectIndex}].Topics[0].TopicName" class="form-control" required />
+                                    </div>
+                                    <table class="table mt-3">
+                                        <thead>
+                                            <tr>
+                                                <th>Subtopic</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="subtopics-${subjectIndex}-0">
+                                            <tr>
+                                                <td>
+                                                    <input name="[${subjectIndex}].Topics[0].Subtopics[0].SubtopicName" class="form-control" required />
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-sm btn-danger" onclick="removeSubtopic(this)">Remove</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button type="button" class="btn btn-sm btn-success" onclick="addSubtopic(${subjectIndex}, 0)">Add Subtopic</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-primary mt-2" onclick="addTopic(${subjectIndex})">Add Topic</button>
+                    </div>
+                </div>
+            `;
+            container.insertAdjacentHTML('beforeend', html);
+            topicIndices[subjectIndex] = 1;
+            subjectIndex++;
+        }
+
+        function addTopic(subjectIdx) {
+            const container = document.getElementById(`topics-${subjectIdx}`);
+            const topicIdx = topicIndices[subjectIdx] || 0;
+
+            const html = `
+                <div class="card mt-3">
+                    <div class="card-header d-flex justify-content-between">
+                        <h6>Topic ${topicIdx + 1}</h6>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="removeTopic(this)">Remove</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Topic Name</label>
+                            <input name="[${subjectIdx}].Topics[${topicIdx}].TopicName" class="form-control" required />
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Subtopic</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="subtopics-${subjectIdx}-${topicIdx}">
+                                <tr>
+                                    <td>
+                                        <input name="[${subjectIdx}].Topics[${topicIdx}].Subtopics[0].SubtopicName" class="form-control" required />
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-danger" onclick="removeSubtopic(this)">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-sm btn-success" onclick="addSubtopic(${subjectIdx}, ${topicIdx})">Add Subtopic</button>
+                    </div>
+                </div>
+            `;
+            container.insertAdjacentHTML('beforeend', html);
+            topicIndices[subjectIdx] = topicIdx + 1;
+        }
+
+        function addSubtopic(subjectIdx, topicIdx) {
+            const tbody = document.getElementById(`subtopics-${subjectIdx}-${topicIdx}`);
+            const rowCount = tbody.rows.length;
+
+            const html = `
+                <tr>
+                    <td>
+                        <input name="[${subjectIdx}].Topics[${topicIdx}].Subtopics[${rowCount}].SubtopicName" class="form-control" required />
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-danger" onclick="removeSubtopic(this)">Remove</button>
+                    </td>
+                </tr>
+            `;
+            tbody.insertAdjacentHTML('beforeend', html);
+        }
+
+        function removeSubject(btn) {
+            if (confirm('Remove this subject and all its topics?')) {
+                btn.closest('.card').remove();
+            }
+        }
+
+        function removeTopic(btn) {
+            if (confirm('Remove this topic and all its subtopics?')) {
+                btn.closest('.card').remove();
+            }
+        }
+
+        function removeSubtopic(btn) {
+            const row = btn.closest('tr');
+            if (row.parentElement.rows.length > 1) {
+                row.remove();
+            } else {
+                alert('Each topic must have at least one subtopic');
+            }
+        }
+    </script>
+}
